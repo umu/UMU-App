@@ -10,7 +10,15 @@
 
 
 @interface Link : NSObject {
-
+	int id;
+	NSString *title;
+	NSString *url;
 }
+
+@property (nonatomic) int id; 
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *url;
+
+- (id)init:(int)pId title:(NSString*)pTitle url:(NSString*)pUrl;
 
 @end

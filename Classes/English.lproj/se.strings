@@ -1,0 +1,9 @@
+/* 
+   se.strings
+   umuApp
+
+   Created by Jonny Strömberg on 10/27/10.
+   Copyright 2010 __MyCompanyName__. All rights reserved.
+ */
+ 
+"apiurl" = "http://umuapp/";
