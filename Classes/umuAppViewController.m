@@ -9,6 +9,7 @@
 #import "umuAppViewController.h"
 #import "NoteViewController.h"
 #import "NewsViewController.h"
+#import "PlaceMapController.h"
 
 @implementation umuAppViewController
 
@@ -45,6 +46,7 @@
         case 0:
             break;
         case 1:
+            viewController = [[PlaceMapController alloc] initWithNibName:@"PlaceMapController" bundle:nil];
             break;
         case 2:
             viewController = [[NoteViewController alloc] initWithNibName:@"NoteViewController" bundle:nil];
@@ -59,6 +61,7 @@
     }
  
     [self.view addSubview:viewController.view]; 
+	/*
     viewController.view.alpha = 0.0;
     [[viewController view] setFrame:CGRectMake(160,240,0,0)];
     [UIView beginAnimations:nil context:nil];
@@ -67,7 +70,7 @@
     [[viewController view] setFrame:CGRectMake(0,0,320,480)];
     viewController.view.alpha = 1.0;
     [UIView commitAnimations];
-
+	*/
         
      
 }

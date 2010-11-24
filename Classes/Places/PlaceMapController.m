@@ -7,6 +7,8 @@
 //
 
 #import "PlaceMapController.h"
+#import "MapOverlay.h"
+
 
 
 @implementation PlaceMapController
@@ -21,12 +23,28 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	MKCoordinateRegion region;
+	region.center.latitude = 63.820587;
+	region.center.longitude = 20.306168;
+	region.span.latitudeDelta = 0.0039;
+	region.span.longitudeDelta = 0.0034;
+	mapView.region = region;
+	mapView.mapType = MKMapTypeSatellite;
+	mapView.showsUserLocation = YES;
+	/*
+	[self viewFo	
+	MapOverlay *overlay = [[MapOverlay alloc] init];
+	mapView = overlay;
+	[mapView addOverlay:overlay];
+	
+    [overlay release];
+	 */
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.

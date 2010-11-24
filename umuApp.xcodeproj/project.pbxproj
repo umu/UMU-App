@@ -68,6 +68,8 @@
 		7CDA11BC126F214300C97603 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA11BB126F214300C97603 /* Icon.png */; };
 		7CE0205A129D1ECC00422DA3 /* NoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE02058129D1ECC00422DA3 /* NoteView.m */; };
 		7CE0205B129D1ECC00422DA3 /* NoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE02059129D1ECC00422DA3 /* NoteView.xib */; };
+		FBC86217129D503D00AE921D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC86216129D503D00AE921D /* MapKit.framework */; };
+		FBC8626B129D67FF00AE921D /* MapOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8626A129D67FF00AE921D /* MapOverlay.m */; };
 		FBE4ABDA12785D3F004021F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBE4ABD912785D3F004021F8 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -172,6 +174,9 @@
 		7CE02058129D1ECC00422DA3 /* NoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteView.m; path = Notes/NoteView.m; sourceTree = "<group>"; };
 		7CE02059129D1ECC00422DA3 /* NoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteView.xib; path = Classes/Notes/NoteView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* umuApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "umuApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		FBC86216129D503D00AE921D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FBC86269129D67FF00AE921D /* MapOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapOverlay.h; path = Places/MapOverlay.h; sourceTree = "<group>"; };
+		FBC8626A129D67FF00AE921D /* MapOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapOverlay.m; path = Places/MapOverlay.m; sourceTree = "<group>"; };
 		FBE4ABDC12785D99004021F8 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Swedish; path = Classes/Swedish.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +188,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				FBC86217129D503D00AE921D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +255,7 @@
 			children = (
 				7C778EE712941825005AF8A9 /* Interface XIB */,
 				7C778EE612941814005AF8A9 /* GFX */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -259,6 +266,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				FBC86216129D503D00AE921D /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,7 +304,6 @@
 				2899E5210DE3E06400AC0155 /* umuAppViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* umuApp-Info.plist */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
 			);
 			name = "Interface XIB";
 			sourceTree = "<group>";
@@ -396,6 +403,8 @@
 				7CDA1187126F0B3700C97603 /* PlaceListController.m */,
 				7CDA1181126F0AED00C97603 /* PlaceViewController.h */,
 				7CDA1182126F0AED00C97603 /* PlaceViewController.m */,
+				FBC86269129D67FF00AE921D /* MapOverlay.h */,
+				FBC8626A129D67FF00AE921D /* MapOverlay.m */,
 			);
 			name = Places;
 			sourceTree = "<group>";
@@ -486,7 +495,6 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "umuApp" */;
 			compatibilityVersion = "Xcode 3.1";
-			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -578,6 +586,7 @@
 				7C9B516E127855190082DB44 /* CSerializedJSONData.m in Sources */,
 				7C41210D1293E2970051DAFC /* NoteViewController.m in Sources */,
 				7CE0205A129D1ECC00422DA3 /* NoteView.m in Sources */,
+				FBC8626B129D67FF00AE921D /* MapOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
