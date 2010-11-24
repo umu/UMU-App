@@ -21,8 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 
     // Create API-connector
-	[self setApiConnector:[[APIConnector alloc] init]];
-	[self.apiConnector getLinks];
+	//[self setApiConnector:[[APIConnector alloc] init]];
+	//[self.apiConnector getLinks];
     // Override point for customization after application launch.
 
     // Add the view controller's view to the window and display.

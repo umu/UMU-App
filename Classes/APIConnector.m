@@ -11,7 +11,7 @@
 
 @implementation APIConnector
 
-@synthesize apiUrl, categoriesUrl, linksUrl, eventsUrl, placesUrl, objectsUrl;
+@synthesize apiUrl, categoriesUrl, linksUrl, eventsUrl, placesUrl, notesUrl;
 
 -(id)init {
 	self.apiUrl = NSLocalizedString(@"apiurl", @"API-urlen"); 
@@ -19,7 +19,7 @@
 	self.categoriesUrl = NSLocalizedString(@"apicategories", @"API-urlen för kategorier"); 
 	self.eventsUrl = NSLocalizedString(@"apievents", @"API-urlen för events"); 
 	self.placesUrl = NSLocalizedString(@"apiplaces", @"API-urlen för platser"); 
-	self.objectsUrl = NSLocalizedString(@"apiobjects", @"API-urlen för anslag"); 
+	self.notesUrl = NSLocalizedString(@"apiobjects", @"API-urlen för anslag"); 
 	return self;
 }
 
@@ -42,14 +42,14 @@
 	return [self getArrayFromUrl:[NSString stringWithFormat:@"%@/%i", self.notesUrl, noteId]];
 }
 -(id) getNotesFromCategories: (NSString *) ids {
-	return [self getArrayFromUrl:[NSString stringWithFormat:@"%@/%@/%@", self.noteUrl, @"categories", ids]];
+	return [self getArrayFromUrl:[NSString stringWithFormat:@"%@/%@/%@", self.notesUrl, @"categories", ids]];
 }
 
 /* Events */
 -(id) getEvents {
 	return [self getArrayFromUrl:self.eventsUrl];
 }
--(id) getPlaceWithId: (int) placeId {
+-(id) getEventsWithId: (int) placeId {
 	return [self getArrayFromUrl:[NSString stringWithFormat:@"%@/%i", self.placesUrl, placeId]];
 }
 -(id) getEventsFromCategories: (NSString *) ids {

@@ -109,7 +109,7 @@ static NSUInteger kNumberOfPages = 6;
         frame.origin.y = 0;
         controller.view.frame = frame;
         [scrollView addSubview:controller.view];
-        
+        NSLog(@"Lägger till view");
         NSDictionary *numberItem = [self.contentList objectAtIndex:page];
         
     }

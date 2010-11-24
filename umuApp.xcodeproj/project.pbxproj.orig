@@ -66,9 +66,12 @@
 		7CDA11B9126F0E8D00C97603 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA11B7126F0E8D00C97603 /* TwitterViewController.m */; };
 		7CDA11BA126F0E8D00C97603 /* TwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA11B8126F0E8D00C97603 /* TwitterViewController.xib */; };
 		7CDA11BC126F214300C97603 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA11BB126F214300C97603 /* Icon.png */; };
+<<<<<<< HEAD
 		7CE0205A129D1ECC00422DA3 /* NoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE02058129D1ECC00422DA3 /* NoteView.m */; };
 		7CE0205B129D1ECC00422DA3 /* NoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE02059129D1ECC00422DA3 /* NoteView.xib */; };
+=======
 		FBE4ABDA12785D3F004021F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBE4ABD912785D3F004021F8 /* Localizable.strings */; };
+>>>>>>> 54d0342762807d20b5d047861781a9f798ba25dd
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -247,6 +250,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				7C778EE712941825005AF8A9 /* Interface XIB */,
 				7C778EE612941814005AF8A9 /* GFX */,
 			);
@@ -268,7 +272,9 @@
 			children = (
 				7C778EE81294185A005AF8A9 /* notes_background.png */,
 				7C778EE91294185A005AF8A9 /* notes_background@2x.png */,
+=======
 				FBE4ABD912785D3F004021F8 /* Localizable.strings */,
+>>>>>>> 54d0342762807d20b5d047861781a9f798ba25dd
 				7CDA11BB126F214300C97603 /* Icon.png */,
 			);
 			name = GFX;
@@ -486,7 +492,6 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "umuApp" */;
 			compatibilityVersion = "Xcode 3.1";
-			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -526,11 +531,14 @@
 				7CDA11AD126F0C7400C97603 /* FilterViewController.xib in Resources */,
 				7CDA11BA126F0E8D00C97603 /* TwitterViewController.xib in Resources */,
 				7CDA11BC126F214300C97603 /* Icon.png in Resources */,
+<<<<<<< HEAD
 				7C41210E1293E2970051DAFC /* NoteViewController.xib in Resources */,
 				7C778EEA1294185A005AF8A9 /* notes_background.png in Resources */,
 				7C778EEB1294185A005AF8A9 /* notes_background@2x.png in Resources */,
 				7CE0205B129D1ECC00422DA3 /* NoteView.xib in Resources */,
+=======
 				FBE4ABDA12785D3F004021F8 /* Localizable.strings in Resources */,
+>>>>>>> 54d0342762807d20b5d047861781a9f798ba25dd
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
