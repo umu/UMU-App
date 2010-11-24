@@ -1,15 +1,15 @@
 //
-//  NotePreviewViewController.m
+//  NoteView.m
 //  umuApp
 //
-//  Created by Erik Ortman on 10/20/10.
+//  Created by Erik Ortman on 11/24/10.
 //  Copyright (c) 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "NotePreviewViewController.h"
+#import "NoteView.h"
 
 
-@implementation NotePreviewViewController
+@implementation NoteView
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.

@@ -100,7 +100,7 @@
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>NotePreviewViewController</string>
+					<string>NoteView</string>
 					<string>UIResponder</string>
 					<string>{{556, 412}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -128,11 +128,11 @@
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
-					<string key="className">NotePreviewViewController</string>
+					<string key="className">NoteView</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">NotePreviewViewController.h</string>
+						<string key="minorKey">NoteView.h</string>
 					</object>
 				</object>
 			</object>
