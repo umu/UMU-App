@@ -15,7 +15,7 @@
 	NSString *categoriesUrl;
 	NSString *eventsUrl;
 	NSString *placesUrl;
-	NSString *objectsUrl;
+	NSString *notesUrl;
 }
 
 @property (nonatomic, retain) NSString *apiUrl;
@@ -23,7 +23,7 @@
 @property (nonatomic, retain) NSString *categoriesUrl;
 @property (nonatomic, retain) NSString *eventsUrl;
 @property (nonatomic, retain) NSString *placesUrl;
-@property (nonatomic, retain) NSString *objectsUrl;
+@property (nonatomic, retain) NSString *notesUrl;
 
 /* Links */
 -(id) getLinks;
