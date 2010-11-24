@@ -66,6 +66,7 @@
 		7CDA11B9126F0E8D00C97603 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA11B7126F0E8D00C97603 /* TwitterViewController.m */; };
 		7CDA11BA126F0E8D00C97603 /* TwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA11B8126F0E8D00C97603 /* TwitterViewController.xib */; };
 		7CDA11BC126F214300C97603 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA11BB126F214300C97603 /* Icon.png */; };
+		FBE4ABDA12785D3F004021F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBE4ABD912785D3F004021F8 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -167,6 +168,7 @@
 		7CDA11B8126F0E8D00C97603 /* TwitterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TwitterViewController.xib; path = Classes/TwitterViewController.xib; sourceTree = "<group>"; };
 		7CDA11BB126F214300C97603 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* umuApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "umuApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		FBE4ABDC12785D99004021F8 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Swedish; path = Classes/Swedish.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FBE4ABD912785D3F004021F8 /* Localizable.strings */,
 				7CDA11BB126F214300C97603 /* Icon.png */,
 				7CDA11B8126F0E8D00C97603 /* TwitterViewController.xib */,
 				7CDA11B3126F0E3900C97603 /* NotePreviewViewController.xib */,
@@ -467,6 +470,7 @@
 				Japanese,
 				French,
 				German,
+				Swedish,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -501,6 +505,7 @@
 				7CDA11B5126F0E3900C97603 /* NotePreviewViewController.xib in Resources */,
 				7CDA11BA126F0E8D00C97603 /* TwitterViewController.xib in Resources */,
 				7CDA11BC126F214300C97603 /* Icon.png in Resources */,
+				FBE4ABDA12785D3F004021F8 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +557,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBE4ABD912785D3F004021F8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBE4ABDC12785D99004021F8 /* Swedish */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {

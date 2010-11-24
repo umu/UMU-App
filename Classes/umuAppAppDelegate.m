@@ -13,13 +13,16 @@
 
 @synthesize window;
 @synthesize viewController;
-
+@synthesize apiConnector;
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
+
+    // Create API-connector
+	[self setApiConnector:[[APIConnector alloc] init]];
+	[self.apiConnector getLinks];
     // Override point for customization after application launch.
 
     // Add the view controller's view to the window and display.
@@ -79,6 +82,7 @@
 
 
 - (void)dealloc {
+	[apiConnector release];
     [viewController release];
     [window release];
     [super dealloc];

@@ -8,7 +8,14 @@
 
 #import "Link.h"
 
-
 @implementation Link
+@synthesize id, title, url;
+
+-(id)init:(int)pId title:(NSString*)pTitle url:(NSString*)pUrl {
+	self.id = pId;
+	title = pTitle;
+	url = pUrl;
+	return self;
+}
 
 @end

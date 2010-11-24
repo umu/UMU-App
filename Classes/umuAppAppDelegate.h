@@ -7,16 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "APIConnector.h"
 
 @class umuAppViewController;
 
 @interface umuAppAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+	APIConnector *apiConnector;
     umuAppViewController *viewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet umuAppViewController *viewController;
+@property (nonatomic, retain) APIConnector *apiConnector;
 
 @end
 

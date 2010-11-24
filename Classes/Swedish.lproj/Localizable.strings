@@ -1,0 +1,14 @@
+/* 
+   se.strings
+   umuApp
+
+   Created by Jonny Strömberg on 10/27/10.
+   Copyright 2010 __MyCompanyName__. All rights reserved.
+ */
+ 
+"apiurl"		= "http://umuapp/";
+"apilinks"		= "http://umuapp/links";
+"apicategories" = "http://umuapp/categories";
+"apievents"		= "http://umuapp/events";
+"apiplaces"		= "http://umuapp/places";
+"apiobjects"	= "http://umuapp/objects";
