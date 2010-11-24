@@ -7,19 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NoteViewController.h"
 
 @interface umuAppViewController : UIViewController {
     
-    UIButton *notesButton;
-    NoteViewController *noteView;
+    UIButton *featureButton;
+    UIViewController *viewController;
+    UINavigationController *navigationController;
+
 
 }
 
-@property (nonatomic, retain) IBOutlet UIButton *notesButton;
-@property (nonatomic, retain) NoteViewController *noteView;
+@property (nonatomic, retain) IBOutlet UIButton *featureButton;
+@property (nonatomic, retain) UIViewController *viewController;
+@property (nonatomic, retain) UINavigationController *navigationController;
 
-- (IBAction) openNotes: (id)sender;
+- (IBAction) openView: (id)sender;
 
 @end
 

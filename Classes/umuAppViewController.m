@@ -7,10 +7,12 @@
 //
 
 #import "umuAppViewController.h"
+#import "NoteViewController.h"
+#import "NewsViewController.h"
 
 @implementation umuAppViewController
 
-@synthesize notesButton, noteView;
+@synthesize featureButton, viewController, navigationController;
 
 
 
@@ -37,9 +39,37 @@
     [super viewDidLoad];
 }
 
-- (IBAction) openNotes: (id)sender {
-    [self.view addSubview:noteView];
-    
+- (IBAction) openView: (id)sender {
+    UIButton *button = (UIButton *)sender;
+    switch ([button tag]) {
+        case 0:
+            break;
+        case 1:
+            break;
+        case 2:
+            viewController = [[NoteViewController alloc] initWithNibName:@"NoteViewController" bundle:nil];
+            break;
+        case 3:
+            break;
+        case 4:
+            viewController = [[NewsViewController alloc] initWithNibName:@"NewsViewController" bundle:nil];
+            break;
+        case 5:
+            break;
+    }
+ 
+    [self.view addSubview:viewController.view]; 
+    viewController.view.alpha = 0.0;
+    [[viewController view] setFrame:CGRectMake(160,240,0,0)];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.2]; 
+    //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:[viewController view] cache:YES];
+    [[viewController view] setFrame:CGRectMake(0,0,320,480)];
+    viewController.view.alpha = 1.0;
+    [UIView commitAnimations];
+
+        
+     
 }
 
 
@@ -67,8 +97,8 @@
 
 
 - (void)dealloc {
-    [noteView release];
-    [notesButton release];
+    [featureButton release];
+    [viewController release];
     [super dealloc];
 }
 

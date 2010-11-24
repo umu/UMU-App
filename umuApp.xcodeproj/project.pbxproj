@@ -15,6 +15,10 @@
 		2899E5220DE3E06400AC0155 /* umuAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* umuAppViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* umuAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* umuAppViewController.m */; };
+		7C41210D1293E2970051DAFC /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C41210B1293E2970051DAFC /* NoteViewController.m */; };
+		7C41210E1293E2970051DAFC /* NoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C41210C1293E2970051DAFC /* NoteViewController.xib */; };
+		7C778EEA1294185A005AF8A9 /* notes_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C778EE81294185A005AF8A9 /* notes_background.png */; };
+		7C778EEB1294185A005AF8A9 /* notes_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C778EE91294185A005AF8A9 /* notes_background@2x.png */; };
 		7C9B5164127855190082DB44 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B514C127855190082DB44 /* CDataScanner.m */; };
 		7C9B5165127855190082DB44 /* CExtensibleJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B514F127855190082DB44 /* CExtensibleJSONSerializer.m */; };
 		7C9B5166127855190082DB44 /* CJSONDeserializer_BlocksExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B5151127855190082DB44 /* CJSONDeserializer_BlocksExtensions.m */; };
@@ -50,8 +54,6 @@
 		7CDA118F126F0B5300C97603 /* PlaceMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA118D126F0B5300C97603 /* PlaceMapController.xib */; };
 		7CDA1193126F0B7500C97603 /* PlaceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA1191126F0B7500C97603 /* PlaceDetailViewController.m */; };
 		7CDA1194126F0B7500C97603 /* PlaceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA1192126F0B7500C97603 /* PlaceDetailViewController.xib */; };
-		7CDA1198126F0B9500C97603 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA1196126F0B9500C97603 /* NoteViewController.m */; };
-		7CDA1199126F0B9500C97603 /* NoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA1197126F0B9500C97603 /* NoteViewController.xib */; };
 		7CDA119D126F0BB300C97603 /* CreateNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA119B126F0BB300C97603 /* CreateNoteViewController.m */; };
 		7CDA119E126F0BB300C97603 /* CreateNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA119C126F0BB300C97603 /* CreateNoteViewController.xib */; };
 		7CDA11A2126F0BE300C97603 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA11A0126F0BE300C97603 /* InfoViewController.m */; };
@@ -61,11 +63,11 @@
 		7CDA11AC126F0C7400C97603 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA11AA126F0C7400C97603 /* FilterViewController.m */; };
 		7CDA11AD126F0C7400C97603 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA11AB126F0C7400C97603 /* FilterViewController.xib */; };
 		7CDA11B0126F0DFC00C97603 /* APIConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA11AF126F0DFC00C97603 /* APIConnector.m */; };
-		7CDA11B4126F0E3900C97603 /* NotePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA11B2126F0E3900C97603 /* NotePreviewViewController.m */; };
-		7CDA11B5126F0E3900C97603 /* NotePreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA11B3126F0E3900C97603 /* NotePreviewViewController.xib */; };
 		7CDA11B9126F0E8D00C97603 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA11B7126F0E8D00C97603 /* TwitterViewController.m */; };
 		7CDA11BA126F0E8D00C97603 /* TwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA11B8126F0E8D00C97603 /* TwitterViewController.xib */; };
 		7CDA11BC126F214300C97603 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA11BB126F214300C97603 /* Icon.png */; };
+		7CE0205A129D1ECC00422DA3 /* NoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE02058129D1ECC00422DA3 /* NoteView.m */; };
+		7CE0205B129D1ECC00422DA3 /* NoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE02059129D1ECC00422DA3 /* NoteView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +83,11 @@
 		28D7ACF70DDB3853001CB0EB /* umuAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = umuAppViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* umuApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = umuApp_Prefix.pch; sourceTree = "<group>"; };
+		7C41210A1293E2970051DAFC /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteViewController.h; path = Notes/NoteViewController.h; sourceTree = "<group>"; };
+		7C41210B1293E2970051DAFC /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteViewController.m; path = Notes/NoteViewController.m; sourceTree = "<group>"; };
+		7C41210C1293E2970051DAFC /* NoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteViewController.xib; path = Classes/Notes/NoteViewController.xib; sourceTree = "<group>"; };
+		7C778EE81294185A005AF8A9 /* notes_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notes_background.png; path = Resources/notes_background.png; sourceTree = "<group>"; };
+		7C778EE91294185A005AF8A9 /* notes_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "notes_background@2x.png"; path = "Resources/notes_background@2x.png"; sourceTree = "<group>"; };
 		7C9B514B127855190082DB44 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
 		7C9B514C127855190082DB44 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
 		7C9B514E127855190082DB44 /* CExtensibleJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CExtensibleJSONSerializer.h; sourceTree = "<group>"; };
@@ -142,9 +149,6 @@
 		7CDA1190126F0B7500C97603 /* PlaceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceDetailViewController.h; path = Places/PlaceDetailViewController.h; sourceTree = "<group>"; };
 		7CDA1191126F0B7500C97603 /* PlaceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceDetailViewController.m; path = Places/PlaceDetailViewController.m; sourceTree = "<group>"; };
 		7CDA1192126F0B7500C97603 /* PlaceDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlaceDetailViewController.xib; path = Classes/Places/PlaceDetailViewController.xib; sourceTree = "<group>"; };
-		7CDA1195126F0B9500C97603 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteViewController.h; path = Notes/NoteViewController.h; sourceTree = "<group>"; };
-		7CDA1196126F0B9500C97603 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteViewController.m; path = Notes/NoteViewController.m; sourceTree = "<group>"; };
-		7CDA1197126F0B9500C97603 /* NoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteViewController.xib; path = Classes/Notes/NoteViewController.xib; sourceTree = "<group>"; };
 		7CDA119A126F0BB300C97603 /* CreateNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateNoteViewController.h; path = Notes/CreateNoteViewController.h; sourceTree = "<group>"; };
 		7CDA119B126F0BB300C97603 /* CreateNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateNoteViewController.m; path = Notes/CreateNoteViewController.m; sourceTree = "<group>"; };
 		7CDA119C126F0BB300C97603 /* CreateNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateNoteViewController.xib; path = Classes/Notes/CreateNoteViewController.xib; sourceTree = "<group>"; };
@@ -159,13 +163,13 @@
 		7CDA11AB126F0C7400C97603 /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilterViewController.xib; path = Classes/FilterViewController.xib; sourceTree = "<group>"; };
 		7CDA11AE126F0DFC00C97603 /* APIConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConnector.h; sourceTree = "<group>"; };
 		7CDA11AF126F0DFC00C97603 /* APIConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConnector.m; sourceTree = "<group>"; };
-		7CDA11B1126F0E3900C97603 /* NotePreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotePreviewViewController.h; sourceTree = "<group>"; };
-		7CDA11B2126F0E3900C97603 /* NotePreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotePreviewViewController.m; sourceTree = "<group>"; };
-		7CDA11B3126F0E3900C97603 /* NotePreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NotePreviewViewController.xib; path = Classes/NotePreviewViewController.xib; sourceTree = "<group>"; };
 		7CDA11B6126F0E8D00C97603 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
 		7CDA11B7126F0E8D00C97603 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
 		7CDA11B8126F0E8D00C97603 /* TwitterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TwitterViewController.xib; path = Classes/TwitterViewController.xib; sourceTree = "<group>"; };
 		7CDA11BB126F214300C97603 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
+		7CE02057129D1ECC00422DA3 /* NoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteView.h; path = Notes/NoteView.h; sourceTree = "<group>"; };
+		7CE02058129D1ECC00422DA3 /* NoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteView.m; path = Notes/NoteView.m; sourceTree = "<group>"; };
+		7CE02059129D1ECC00422DA3 /* NoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteView.xib; path = Classes/Notes/NoteView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* umuApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "umuApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,7 +227,6 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			comments = "Erik was here";
@@ -242,26 +245,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7CDA11BB126F214300C97603 /* Icon.png */,
-				7CDA11B8126F0E8D00C97603 /* TwitterViewController.xib */,
-				7CDA11B3126F0E3900C97603 /* NotePreviewViewController.xib */,
-				7CDA11A6126F0C2000C97603 /* LinkViewController.xib */,
-				7CDA11A1126F0BE300C97603 /* InfoViewController.xib */,
-				7CDA1168126F092D00C97603 /* FavoriteViewController.xib */,
-				7CDA119C126F0BB300C97603 /* CreateNoteViewController.xib */,
-				7CDA1197126F0B9500C97603 /* NoteViewController.xib */,
-				7CDA1192126F0B7500C97603 /* PlaceDetailViewController.xib */,
-				7CDA118D126F0B5300C97603 /* PlaceMapController.xib */,
-				7CDA1188126F0B3700C97603 /* PlaceListController.xib */,
-				7CDA1183126F0AED00C97603 /* PlaceViewController.xib */,
-				7CDA117E126F0A7B00C97603 /* NewsDetailViewController.xib */,
-				7CDA1179126F0A6100C97603 /* NewsViewController.xib */,
-				7CDA1174126F0A1200C97603 /* EventDetailViewController.xib */,
-				7CDA116F126F09EA00C97603 /* EventsViewController.xib */,
-				7CDA11AB126F0C7400C97603 /* FilterViewController.xib */,
-				2899E5210DE3E06400AC0155 /* umuAppViewController.xib */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				8D1107310486CEB800E47090 /* umuApp-Info.plist */,
+				7C778EE712941825005AF8A9 /* Interface XIB */,
+				7C778EE612941814005AF8A9 /* GFX */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -274,6 +259,43 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C778EE612941814005AF8A9 /* GFX */ = {
+			isa = PBXGroup;
+			children = (
+				7C778EE81294185A005AF8A9 /* notes_background.png */,
+				7C778EE91294185A005AF8A9 /* notes_background@2x.png */,
+				7CDA11BB126F214300C97603 /* Icon.png */,
+			);
+			name = GFX;
+			sourceTree = "<group>";
+		};
+		7C778EE712941825005AF8A9 /* Interface XIB */ = {
+			isa = PBXGroup;
+			children = (
+				7CE02059129D1ECC00422DA3 /* NoteView.xib */,
+				7C41210C1293E2970051DAFC /* NoteViewController.xib */,
+				7CDA11B8126F0E8D00C97603 /* TwitterViewController.xib */,
+				7CDA11A6126F0C2000C97603 /* LinkViewController.xib */,
+				7CDA11A1126F0BE300C97603 /* InfoViewController.xib */,
+				7CDA1168126F092D00C97603 /* FavoriteViewController.xib */,
+				7CDA119C126F0BB300C97603 /* CreateNoteViewController.xib */,
+				7CDA1192126F0B7500C97603 /* PlaceDetailViewController.xib */,
+				7CDA118D126F0B5300C97603 /* PlaceMapController.xib */,
+				7CDA1188126F0B3700C97603 /* PlaceListController.xib */,
+				7CDA1183126F0AED00C97603 /* PlaceViewController.xib */,
+				7CDA117E126F0A7B00C97603 /* NewsDetailViewController.xib */,
+				7CDA1179126F0A6100C97603 /* NewsViewController.xib */,
+				7CDA1174126F0A1200C97603 /* EventDetailViewController.xib */,
+				7CDA116F126F09EA00C97603 /* EventsViewController.xib */,
+				7CDA11AB126F0C7400C97603 /* FilterViewController.xib */,
+				2899E5210DE3E06400AC0155 /* umuAppViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* umuApp-Info.plist */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+			);
+			name = "Interface XIB";
 			sourceTree = "<group>";
 		};
 		7C9B5149127855040082DB44 /* Libraries */ = {
@@ -378,12 +400,12 @@
 		7CDA114B126EF4A000C97603 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				7CDA11B1126F0E3900C97603 /* NotePreviewViewController.h */,
-				7CDA11B2126F0E3900C97603 /* NotePreviewViewController.m */,
+				7CE02057129D1ECC00422DA3 /* NoteView.h */,
+				7CE02058129D1ECC00422DA3 /* NoteView.m */,
+				7C41210A1293E2970051DAFC /* NoteViewController.h */,
+				7C41210B1293E2970051DAFC /* NoteViewController.m */,
 				7CDA119A126F0BB300C97603 /* CreateNoteViewController.h */,
 				7CDA119B126F0BB300C97603 /* CreateNoteViewController.m */,
-				7CDA1195126F0B9500C97603 /* NoteViewController.h */,
-				7CDA1196126F0B9500C97603 /* NoteViewController.m */,
 			);
 			name = Notes;
 			sourceTree = "<group>";
@@ -494,14 +516,16 @@
 				7CDA118A126F0B3700C97603 /* PlaceListController.xib in Resources */,
 				7CDA118F126F0B5300C97603 /* PlaceMapController.xib in Resources */,
 				7CDA1194126F0B7500C97603 /* PlaceDetailViewController.xib in Resources */,
-				7CDA1199126F0B9500C97603 /* NoteViewController.xib in Resources */,
 				7CDA119E126F0BB300C97603 /* CreateNoteViewController.xib in Resources */,
 				7CDA11A3126F0BE300C97603 /* InfoViewController.xib in Resources */,
 				7CDA11A8126F0C2000C97603 /* LinkViewController.xib in Resources */,
 				7CDA11AD126F0C7400C97603 /* FilterViewController.xib in Resources */,
-				7CDA11B5126F0E3900C97603 /* NotePreviewViewController.xib in Resources */,
 				7CDA11BA126F0E8D00C97603 /* TwitterViewController.xib in Resources */,
 				7CDA11BC126F214300C97603 /* Icon.png in Resources */,
+				7C41210E1293E2970051DAFC /* NoteViewController.xib in Resources */,
+				7C778EEA1294185A005AF8A9 /* notes_background.png in Resources */,
+				7C778EEB1294185A005AF8A9 /* notes_background@2x.png in Resources */,
+				7CE0205B129D1ECC00422DA3 /* NoteView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,13 +554,11 @@
 				7CDA1189126F0B3700C97603 /* PlaceListController.m in Sources */,
 				7CDA118E126F0B5300C97603 /* PlaceMapController.m in Sources */,
 				7CDA1193126F0B7500C97603 /* PlaceDetailViewController.m in Sources */,
-				7CDA1198126F0B9500C97603 /* NoteViewController.m in Sources */,
 				7CDA119D126F0BB300C97603 /* CreateNoteViewController.m in Sources */,
 				7CDA11A2126F0BE300C97603 /* InfoViewController.m in Sources */,
 				7CDA11A7126F0C2000C97603 /* LinkViewController.m in Sources */,
 				7CDA11AC126F0C7400C97603 /* FilterViewController.m in Sources */,
 				7CDA11B0126F0DFC00C97603 /* APIConnector.m in Sources */,
-				7CDA11B4126F0E3900C97603 /* NotePreviewViewController.m in Sources */,
 				7CDA11B9126F0E8D00C97603 /* TwitterViewController.m in Sources */,
 				7C9B5164127855190082DB44 /* CDataScanner.m in Sources */,
 				7C9B5165127855190082DB44 /* CExtensibleJSONSerializer.m in Sources */,
@@ -549,6 +571,8 @@
 				7C9B516C127855190082DB44 /* CJSONScanner.m in Sources */,
 				7C9B516D127855190082DB44 /* CJSONSerializer.m in Sources */,
 				7C9B516E127855190082DB44 /* CSerializedJSONData.m in Sources */,
+				7C41210D1293E2970051DAFC /* NoteViewController.m in Sources */,
+				7CE0205A129D1ECC00422DA3 /* NoteView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
