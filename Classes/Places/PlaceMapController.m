@@ -7,7 +7,8 @@
 //
 
 #import "PlaceMapController.h"
-#import "MapOverlay.h"
+#import "APIConnector.h"
+#import "UMUAnnotation.h"
 
 
 
@@ -26,7 +27,7 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	[super viewDidLoad];
 	MKCoordinateRegion region;
 	region.center.latitude = 63.820587;
 	region.center.longitude = 20.306168;
@@ -35,16 +36,17 @@
 	mapView.region = region;
 	mapView.mapType = MKMapTypeSatellite;
 	mapView.showsUserLocation = YES;
-	/*
-	[self viewFo	
-	MapOverlay *overlay = [[MapOverlay alloc] init];
-	mapView = overlay;
-	[mapView addOverlay:overlay];
 	
-    [overlay release];
-	 */
+	APIConnector *apiConnector = [[APIConnector alloc] init];
+	NSArray *places = [apiConnector getPlaces];
+	
+	for (id theKey in places) {
+		UMUAnnotation *annotation = [[UMUAnnotation alloc] initWithDictionary:theKey];
+		[mapView addAnnotation:annotation];
+		[annotation release];
+		
+	}
 }
-
 
 /*
 // Override to allow orientations other than the default portrait orientation.
