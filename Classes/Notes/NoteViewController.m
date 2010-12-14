@@ -81,8 +81,6 @@ static NSUInteger kNumberOfPages = 6;
     [[self view] setFrame:CGRectMake(160,240,0,0)];
     self.view.alpha = 0.0;
     [UIView commitAnimations];
-    //[self.view removeFromSuperview];
-
 }
 
 - (void)loadScrollViewWithPage:(int)page

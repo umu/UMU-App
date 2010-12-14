@@ -28,6 +28,15 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	UIBarButtonItem *lButton =[[UIBarButtonItem alloc] init];
+    
+    lButton.title = @"Stäng";
+    [lButton setTarget:self];
+    [lButton setAction:@selector(closeView:)]; //aMethod defined in the class
+    self.navigationItem.leftBarButtonItem = lButton;
+    [lButton release];
+	
+	
 	MKCoordinateRegion region;
 	region.center.latitude = 63.820587;
 	region.center.longitude = 20.306168;
@@ -41,11 +50,22 @@
 	NSArray *places = [apiConnector getPlaces];
 	
 	for (id theKey in places) {
+		NSLog(@"Din mamma");
 		UMUAnnotation *annotation = [[UMUAnnotation alloc] initWithDictionary:theKey];
 		[mapView addAnnotation:annotation];
 		[annotation release];
-		
 	}
+}
+
+- (void)closeView:(id)sender {
+    self.view.alpha = 1.0;
+    [[self view] setFrame:CGRectMake(0,0,320,480)];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.2]; 
+    //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:[self view] cache:YES];
+    [[self view] setFrame:CGRectMake(160,240,0,0)];
+    self.view.alpha = 0.0;
+    [UIView commitAnimations];
 }
 
 /*

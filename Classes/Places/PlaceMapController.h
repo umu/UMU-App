@@ -12,9 +12,11 @@
 
 @interface PlaceMapController : UIViewController<MKMapViewDelegate> {
     MKMapView *mapView;	
+    UINavigationItem *navigationItem;
 }
 
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
+@property (nonatomic, retain) IBOutlet UINavigationItem *navigationItem;
 
 
 @end
