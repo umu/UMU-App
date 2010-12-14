@@ -76,6 +76,8 @@
 	// Get JSON as a NSString from NSData response
 	NSString *jsonString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];	
 	NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+	
+	NSLog(@"Result: %@", jsonString);
 	NSError *error = nil;
 	NSArray *arr = [[CJSONDeserializer deserializer] deserializeAsArray:jsonData error:&error];
 	

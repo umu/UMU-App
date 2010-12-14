@@ -50,7 +50,7 @@
 	NSArray *places = [apiConnector getPlaces];
 	
 	for (id theKey in places) {
-		NSLog(@"Din mamma");
+		NSLog(@"%@", theKey);
 		UMUAnnotation *annotation = [[UMUAnnotation alloc] initWithDictionary:theKey];
 		[mapView addAnnotation:annotation];
 		[annotation release];
