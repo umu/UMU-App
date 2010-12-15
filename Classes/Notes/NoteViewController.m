@@ -11,7 +11,7 @@
 #import "CreateNoteViewController.h"
 #import "umuAppAppDelegate.h"
 
-static NSUInteger kNumberOfPages = 6;
+static NSUInteger kNumberOfPages = 7;
 
 
 @implementation NoteViewController
@@ -39,7 +39,7 @@ static NSUInteger kNumberOfPages = 6;
     lButton.title= @"Stäng";
     [lButton setTarget:self];
     [lButton setAction:@selector(closeView:)]; //aMethod defined in the class
-    self.navigationItem.rightBarButtonItem =lButton;
+    self.navigationItem.leftBarButtonItem =lButton;
     [lButton release];
     
     UIBarButtonItem *modeButton = [[UIBarButtonItem alloc] init];
@@ -51,7 +51,7 @@ static NSUInteger kNumberOfPages = 6;
                                   //action:@selector(addNote:)];
     
     modeButton.style = UIBarButtonItemStyleBordered;
-    self.navigationItem.leftBarButtonItem = modeButton;
+    self.navigationItem.rightBarButtonItem = modeButton;
     [modeButton release];
     
     UIBarButtonItem *systemItem1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
@@ -110,6 +110,7 @@ static NSUInteger kNumberOfPages = 6;
     [self loadScrollViewWithPage:1];
     
     listView = [[NoteListViewController alloc] initWithNibName:@"NoteListViewController" bundle:nil];
+    [listView setDelegate:self];
     
     
     [super viewDidLoad];
@@ -130,7 +131,7 @@ static NSUInteger kNumberOfPages = 6;
 
 }
 
-- (void)showNote:(id)sender
+- (void)showNote:(id)sender:(int)page
 {
     NSLog(@"Notevy");
 
@@ -145,8 +146,39 @@ static NSUInteger kNumberOfPages = 6;
     
     [UIView commitAnimations];
     [list removeFromSuperview];
-    [self.navigationItem.leftBarButtonItem setAction:@selector(showList:)];
-    self.navigationItem.leftBarButtonItem.title = @"Lista";
+    //Fulkod nedan
+    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width*kNumberOfPages, scrollView.frame.size.height);
+    [self.navigationItem.rightBarButtonItem setAction:@selector(showList:)];
+    self.navigationItem.rightBarButtonItem.title = @"Lista";
+    NSLog(@"Sidan: %d",page);
+    //pageControl.currentPage = page;
+    
+    UIBarButtonItem *systemItem1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                                 target:self
+                                                                                 action:@selector(pressButton1:)];
+    
+    UIBarButtonItem *systemItem2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                                 target:self
+                                                                                 action:@selector(pressButton2:)];
+    
+    
+    //Use this to put space in between your toolbox buttons
+    UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                              target:nil
+                                                                              action:nil];
+    
+    //Add buttons to the array
+    NSArray *items = [NSArray arrayWithObjects: flexItem, systemItem1,flexItem,systemItem2,flexItem, nil];
+    
+    //release buttons
+    [systemItem1 release];
+    [systemItem2 release];
+    [flexItem release];
+    
+    //add array of buttons to toolbar
+    [toolBar setItems:items animated:YES];
+    [list removeFromSuperview];
+
     
 }
 
@@ -166,9 +198,38 @@ static NSUInteger kNumberOfPages = 6;
     //UIView *parent = self.scrollView.superview;
     
     [UIView commitAnimations];
-    [scrollView addSubview:list];
-    [self.navigationItem.leftBarButtonItem setAction:@selector(showNote:)];
-    self.navigationItem.leftBarButtonItem.title = @"Anslag";
+    [self.scrollView addSubview:list];
+    //Fulkod nedan
+    //pageControl.currentPage = 0;
+    //scrollView.pagingEnabled = NO;
+    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, scrollView.frame.size.height);
+    [self.navigationItem.rightBarButtonItem setAction:@selector(showNote::)];
+    self.navigationItem.rightBarButtonItem.title = @"Anslag";
+    
+    UIBarButtonItem *systemItem1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                                 target:self
+                                                                                 action:@selector(pressButton1:)];
+    
+    UIBarButtonItem *systemItem2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                                 target:self
+                                                                                 action:@selector(pressButton2:)];
+    
+    
+    //Use this to put space in between your toolbox buttons
+    UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                              target:nil
+                                                                              action:nil];
+    
+    //Add buttons to the array
+    NSArray *items = [NSArray arrayWithObjects: flexItem, systemItem1,flexItem, nil];
+    
+    //release buttons
+    [systemItem1 release];
+    [systemItem2 release];
+    [flexItem release];
+    
+    //add array of buttons to toolbar
+    [toolBar setItems:items animated:YES];
 
      
     

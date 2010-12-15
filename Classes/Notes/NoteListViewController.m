@@ -11,6 +11,8 @@
 
 @implementation NoteListViewController
 
+@synthesize placeHolder, delegate;
+
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -19,8 +21,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Laddar listvyn");
+    
+    placeHolder = [[NSMutableArray alloc] init];
+	//Add items
+	[placeHolder addObject:@"Kurslitteratur säljes"];
+	[placeHolder addObject:@"Gästföreläsning i Aula Nordica"];
+	[placeHolder addObject:@"Cyklar säljes billigt!"];
+	[placeHolder addObject:@"Mattekväll på Origo"];
+	[placeHolder addObject:@"Extraknäck i sommar"];
+	[placeHolder addObject:@"Never gonna give you up"];
+	[placeHolder addObject:@"Never gonna let you down"];
     // Uncomment the following line to preserve selection between presentations.
-    //self.clearsSelectionOnViewWillAppear = NO;
+    self.clearsSelectionOnViewWillAppear = YES;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -67,7 +79,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 10;
+    return [placeHolder count];
 }
 
 
@@ -78,10 +90,13 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    // Configure the cell...
+    // Configure the cell...   
+    [cell.textLabel setText:[placeHolder objectAtIndex:indexPath.row]];
+    [cell.detailTextLabel setText:@"24 November 15:11 av Erik Ortman"];
+
     
     return cell;
 }
@@ -139,6 +154,12 @@
 	 [self.navigationController pushViewController:detailViewController animated:YES];
 	 [detailViewController release];
 	 */
+    //[parentparent showNote];
+    NSLog(@"Trycker");
+    NSLog(@"Delegate är: %@", delegate);
+    [delegate showNote:self:indexPath.row];
+
+
 }
 
 
@@ -160,6 +181,7 @@
 
 - (void)dealloc {
     [super dealloc];
+    [placeHolder release];
 }
 
 

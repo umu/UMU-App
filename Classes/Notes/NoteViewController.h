@@ -11,8 +11,7 @@
 #import "CreateNoteViewController.h"
 #import "NoteListViewController.h"
 
-
-@interface NoteViewController : UIViewController <UIScrollViewDelegate>{
+@interface NoteViewController : UIViewController <UIScrollViewDelegate, SwitchViewDelegate>{
     
     UINavigationItem *navigationItem;
     UIScrollView *scrollView;
@@ -22,7 +21,6 @@
     CreateNoteViewController *createView;
     NoteListViewController *listView;
     UIToolbar *toolBar;
-    
     BOOL pageControlUsed;
     
 }
@@ -36,9 +34,9 @@
 @property (nonatomic, retain) NoteListViewController *listView;
 @property (nonatomic, retain) IBOutlet UIToolbar *toolBar;
 
-
 - (IBAction)changePage:(id)sender;
 - (void)loadScrollViewWithPage:(int)page;
 - (void)scrollViewDidScroll:(UIScrollView *)sender;
+- (void)showNote:(id)sender:(int)page;
 
 @end

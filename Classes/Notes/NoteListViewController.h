@@ -9,8 +9,22 @@
 #import <UIKit/UIKit.h>
 
 
+@protocol SwitchViewDelegate <NSObject>
+
+- (void)showNote:(id)sender:(int)page;
+
+@end
+
 @interface NoteListViewController : UITableViewController {
     
+    NSMutableArray *placeHolder;
+    id <SwitchViewDelegate> delegate;
+
+    
 }
+
+
+@property (nonatomic, retain) NSMutableArray *placeHolder;
+@property (assign) id delegate;
 
 @end
