@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	
+	/**
 	//Initialize the array.
 	listOfItems = [[NSMutableArray alloc] init];
 	//Add items
@@ -28,7 +28,7 @@
 	[listOfItems addObject:@"Fredag"];
 	[listOfItems addObject:@"Lördag"];
 	[listOfItems addObject:@"Söndag"];
-	
+	**/
 	//Set the title
 	self.navigationItem.title = @"Veckan";
 }
@@ -41,7 +41,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [listOfItems count]; // Antal item i sectionen
+	//return [listOfItems count]; // Antal item i sectionen
 	
 }
 
@@ -86,7 +86,7 @@
 
 
 - (void)dealloc {
-	[listOfItems release];
+	//[listOfItems release];
 	
     [super dealloc];
 }
