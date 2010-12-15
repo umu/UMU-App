@@ -72,6 +72,23 @@
 		7CDA11BC126F214300C97603 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA11BB126F214300C97603 /* Icon.png */; };
 		7CE0205A129D1ECC00422DA3 /* NoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE02058129D1ECC00422DA3 /* NoteView.m */; };
 		7CE0205B129D1ECC00422DA3 /* NoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE02059129D1ECC00422DA3 /* NoteView.xib */; };
+		FB0FCC3512B774A5004DE40F /* main_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC3312B774A5004DE40F /* main_bg.jpg */; };
+		FB0FCC3612B774A5004DE40F /* main_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC3412B774A5004DE40F /* main_bg@2x.jpg */; };
+		FB0FCC3E12B77F70004DE40F /* anslag_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC3A12B77F70004DE40F /* anslag_icon.png */; };
+		FB0FCC3F12B77F70004DE40F /* anslag_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC3B12B77F70004DE40F /* anslag_icon@2x.png */; };
+		FB0FCC4012B77F70004DE40F /* karta_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC3C12B77F70004DE40F /* karta_icon.png */; };
+		FB0FCC4112B77F70004DE40F /* karta_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC3D12B77F70004DE40F /* karta_icon@2x.png */; };
+		FB0FCC4612B7991C004DE40F /* kalender_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC4412B7991C004DE40F /* kalender_icon.png */; };
+		FB0FCC4712B7991C004DE40F /* kalender_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC4512B7991C004DE40F /* kalender_icon@2x.png */; };
+		FB0FCC4E12B79BB5004DE40F /* favoriter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC4812B79BB5004DE40F /* favoriter_icon.png */; };
+		FB0FCC4F12B79BB5004DE40F /* favoriter_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC4912B79BB5004DE40F /* favoriter_icon@2x.png */; };
+		FB0FCC5012B79BB5004DE40F /* lankar.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC4A12B79BB5004DE40F /* lankar.png */; };
+		FB0FCC5112B79BB5004DE40F /* lankar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC4B12B79BB5004DE40F /* lankar@2x.png */; };
+		FB0FCC5212B79BB5004DE40F /* nyheter.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC4C12B79BB5004DE40F /* nyheter.png */; };
+		FB0FCC5312B79BB5004DE40F /* nyheter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC4D12B79BB5004DE40F /* nyheter@2x.png */; };
+		FB10CF4412A6713F0091C285 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB10CF4312A6713F0091C285 /* CoreLocation.framework */; };
+		FB10D0BA12A68D360091C285 /* UMUAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10D0B912A68D360091C285 /* UMUAnnotation.m */; };
+		FBC86217129D503D00AE921D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC86216129D503D00AE921D /* MapKit.framework */; };
 		FBE4ABDA12785D3F004021F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBE4ABD912785D3F004021F8 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -180,6 +197,24 @@
 		7CE02058129D1ECC00422DA3 /* NoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteView.m; path = Notes/NoteView.m; sourceTree = "<group>"; };
 		7CE02059129D1ECC00422DA3 /* NoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteView.xib; path = Classes/Notes/NoteView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* umuApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "umuApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		FB0FCC3312B774A5004DE40F /* main_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = main_bg.jpg; path = Resources/main_bg.jpg; sourceTree = "<group>"; };
+		FB0FCC3412B774A5004DE40F /* main_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "main_bg@2x.jpg"; path = "Resources/main_bg@2x.jpg"; sourceTree = "<group>"; };
+		FB0FCC3A12B77F70004DE40F /* anslag_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = anslag_icon.png; path = Resources/anslag_icon.png; sourceTree = "<group>"; };
+		FB0FCC3B12B77F70004DE40F /* anslag_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "anslag_icon@2x.png"; path = "Resources/anslag_icon@2x.png"; sourceTree = "<group>"; };
+		FB0FCC3C12B77F70004DE40F /* karta_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = karta_icon.png; path = Resources/karta_icon.png; sourceTree = "<group>"; };
+		FB0FCC3D12B77F70004DE40F /* karta_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "karta_icon@2x.png"; path = "Resources/karta_icon@2x.png"; sourceTree = "<group>"; };
+		FB0FCC4412B7991C004DE40F /* kalender_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kalender_icon.png; path = Resources/kalender_icon.png; sourceTree = "<group>"; };
+		FB0FCC4512B7991C004DE40F /* kalender_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kalender_icon@2x.png"; path = "Resources/kalender_icon@2x.png"; sourceTree = "<group>"; };
+		FB0FCC4812B79BB5004DE40F /* favoriter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = favoriter_icon.png; path = Resources/favoriter_icon.png; sourceTree = "<group>"; };
+		FB0FCC4912B79BB5004DE40F /* favoriter_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "favoriter_icon@2x.png"; path = "Resources/favoriter_icon@2x.png"; sourceTree = "<group>"; };
+		FB0FCC4A12B79BB5004DE40F /* lankar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lankar.png; path = Resources/lankar.png; sourceTree = "<group>"; };
+		FB0FCC4B12B79BB5004DE40F /* lankar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lankar@2x.png"; path = "Resources/lankar@2x.png"; sourceTree = "<group>"; };
+		FB0FCC4C12B79BB5004DE40F /* nyheter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nyheter.png; path = Resources/nyheter.png; sourceTree = "<group>"; };
+		FB0FCC4D12B79BB5004DE40F /* nyheter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nyheter@2x.png"; path = "Resources/nyheter@2x.png"; sourceTree = "<group>"; };
+		FB10CF4312A6713F0091C285 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FB10D0B812A68D360091C285 /* UMUAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMUAnnotation.h; sourceTree = "<group>"; };
+		FB10D0B912A68D360091C285 /* UMUAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMUAnnotation.m; sourceTree = "<group>"; };
+		FBC86216129D503D00AE921D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FBE4ABDC12785D99004021F8 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Swedish; path = Classes/Swedish.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +226,8 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				FBC86217129D503D00AE921D /* MapKit.framework in Frameworks */,
+				FB10CF4412A6713F0091C285 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +295,7 @@
 			children = (
 				7C778EE712941825005AF8A9 /* Interface XIB */,
 				7C778EE612941814005AF8A9 /* GFX */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -268,6 +306,8 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				FBC86216129D503D00AE921D /* MapKit.framework */,
+				FB10CF4312A6713F0091C285 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -279,6 +319,20 @@
 				7C86351A129D57F200010833 /* star.png */,
 				7C86350D129D4DC000010833 /* anslagstavla.png */,
 				7C86350E129D4DC000010833 /* anslagstavla@2x.png */,
+				FB0FCC4812B79BB5004DE40F /* favoriter_icon.png */,
+				FB0FCC4912B79BB5004DE40F /* favoriter_icon@2x.png */,
+				FB0FCC4A12B79BB5004DE40F /* lankar.png */,
+				FB0FCC4B12B79BB5004DE40F /* lankar@2x.png */,
+				FB0FCC4C12B79BB5004DE40F /* nyheter.png */,
+				FB0FCC4D12B79BB5004DE40F /* nyheter@2x.png */,
+				FB0FCC4412B7991C004DE40F /* kalender_icon.png */,
+				FB0FCC4512B7991C004DE40F /* kalender_icon@2x.png */,
+				FB0FCC3A12B77F70004DE40F /* anslag_icon.png */,
+				FB0FCC3B12B77F70004DE40F /* anslag_icon@2x.png */,
+				FB0FCC3C12B77F70004DE40F /* karta_icon.png */,
+				FB0FCC3D12B77F70004DE40F /* karta_icon@2x.png */,
+				FB0FCC3312B774A5004DE40F /* main_bg.jpg */,
+				FB0FCC3412B774A5004DE40F /* main_bg@2x.jpg */,
 				7C778EE81294185A005AF8A9 /* notes_background.png */,
 				7C778EE91294185A005AF8A9 /* notes_background@2x.png */,
 				FBE4ABD912785D3F004021F8 /* Localizable.strings */,
@@ -408,6 +462,8 @@
 				7CDA1187126F0B3700C97603 /* PlaceListController.m */,
 				7CDA1181126F0AED00C97603 /* PlaceViewController.h */,
 				7CDA1182126F0AED00C97603 /* PlaceViewController.m */,
+				FB10D0B812A68D360091C285 /* UMUAnnotation.h */,
+				FB10D0B912A68D360091C285 /* UMUAnnotation.m */,
 			);
 			name = Places;
 			sourceTree = "<group>";
@@ -498,7 +554,6 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "umuApp" */;
 			compatibilityVersion = "Xcode 3.1";
-			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -547,6 +602,20 @@
 				7C863510129D4DC000010833 /* anslagstavla@2x.png in Resources */,
 				7C86351B129D57F200010833 /* star_unselected.png in Resources */,
 				7C86351C129D57F200010833 /* star.png in Resources */,
+				FB0FCC3512B774A5004DE40F /* main_bg.jpg in Resources */,
+				FB0FCC3612B774A5004DE40F /* main_bg@2x.jpg in Resources */,
+				FB0FCC3E12B77F70004DE40F /* anslag_icon.png in Resources */,
+				FB0FCC3F12B77F70004DE40F /* anslag_icon@2x.png in Resources */,
+				FB0FCC4012B77F70004DE40F /* karta_icon.png in Resources */,
+				FB0FCC4112B77F70004DE40F /* karta_icon@2x.png in Resources */,
+				FB0FCC4612B7991C004DE40F /* kalender_icon.png in Resources */,
+				FB0FCC4712B7991C004DE40F /* kalender_icon@2x.png in Resources */,
+				FB0FCC4E12B79BB5004DE40F /* favoriter_icon.png in Resources */,
+				FB0FCC4F12B79BB5004DE40F /* favoriter_icon@2x.png in Resources */,
+				FB0FCC5012B79BB5004DE40F /* lankar.png in Resources */,
+				FB0FCC5112B79BB5004DE40F /* lankar@2x.png in Resources */,
+				FB0FCC5212B79BB5004DE40F /* nyheter.png in Resources */,
+				FB0FCC5312B79BB5004DE40F /* nyheter@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +663,7 @@
 				7C9B516E127855190082DB44 /* CSerializedJSONData.m in Sources */,
 				7C41210D1293E2970051DAFC /* NoteViewController.m in Sources */,
 				7CE0205A129D1ECC00422DA3 /* NoteView.m in Sources */,
+				FB10D0BA12A68D360091C285 /* UMUAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

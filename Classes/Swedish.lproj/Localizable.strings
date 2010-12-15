@@ -11,4 +11,8 @@
 "apicategories" = "http://umuapp.se/categories";
 "apievents"		= "http://umuapp.se/events";
 "apiplaces"		= "http://umuapp.se/places";
+<<<<<<< HEAD
 "apinotes"	= "http://umuapp.se/notes";
+=======
+"apiobjects"	= "http://umuapp.se/objects";
+>>>>>>> 2b9a8f08e166ff6ee5eac0d92da4c62cbb526ce9
