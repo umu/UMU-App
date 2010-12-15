@@ -61,25 +61,6 @@
     }
  
     [self.view addSubview:viewController.view]; 
-<<<<<<< HEAD
-    /**
-=======
-	/*
->>>>>>> 2b9a8f08e166ff6ee5eac0d92da4c62cbb526ce9
-    viewController.view.alpha = 0.0;
-    [[viewController view] setFrame:CGRectMake(160,240,0,0)];
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.2]; 
-    //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:[viewController view] cache:YES];
-    [[viewController view] setFrame:CGRectMake(0,0,320,480)];
-    viewController.view.alpha = 1.0;
-    [UIView commitAnimations];
-<<<<<<< HEAD
-     **/
-
-=======
-	*/
->>>>>>> 2b9a8f08e166ff6ee5eac0d92da4c62cbb526ce9
         
      
 }
