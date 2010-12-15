@@ -15,11 +15,13 @@
     UIWindow *window;
 	APIConnector *apiConnector;
     umuAppViewController *viewController;
+    NSArray *notesArray;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet umuAppViewController *viewController;
 @property (nonatomic, retain) APIConnector *apiConnector;
+@property (nonatomic, retain) NSArray *notesArray;
 
 @end
 

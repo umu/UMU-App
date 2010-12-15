@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "CreateNoteViewController.h"
 
 
 @interface NoteViewController : UIViewController <UIScrollViewDelegate>{
@@ -17,6 +18,8 @@
     NSMutableArray *viewControllers;
     NSArray *contentList;
     UIPageControl *pageControl;
+    CreateNoteViewController *createView;
+    UIToolbar *toolBar;
     
     BOOL pageControlUsed;
     
@@ -27,6 +30,8 @@
 @property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
 @property (nonatomic, retain) NSMutableArray *viewControllers;
 @property (nonatomic, retain) NSArray *contentList;
+@property (nonatomic, retain) CreateNoteViewController *createView;
+@property (nonatomic, retain) IBOutlet UIToolbar *toolBar;
 
 
 - (IBAction)changePage:(id)sender;

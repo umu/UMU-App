@@ -13,4 +13,7 @@
     
 }
 
+- (IBAction)dismissAction:(id)sender;
+
+
 @end

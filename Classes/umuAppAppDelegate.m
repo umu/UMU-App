@@ -14,6 +14,7 @@
 @synthesize window;
 @synthesize viewController;
 @synthesize apiConnector;
+@synthesize notesArray;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -21,8 +22,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 
     // Create API-connector
-	//[self setApiConnector:[[APIConnector alloc] init]];
-	//[self.apiConnector getLinks];
+	[self setApiConnector:[[APIConnector alloc] init]];
+	notesArray = [self.apiConnector getNotes];
     // Override point for customization after application launch.
 
     // Add the view controller's view to the window and display.
@@ -31,7 +32,6 @@
 
     return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
@@ -84,6 +84,7 @@
 - (void)dealloc {
 	[apiConnector release];
     [viewController release];
+    [notesArray release];
     [window release];
     [super dealloc];
 }

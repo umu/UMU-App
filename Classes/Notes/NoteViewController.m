@@ -8,13 +8,15 @@
 
 #import "NoteViewController.h"
 #import "NoteView.h"
+#import "CreateNoteViewController.h"
+#import "umuAppAppDelegate.h"
 
 static NSUInteger kNumberOfPages = 6;
 
 
 @implementation NoteViewController
 
-@synthesize navigationItem, scrollView, viewControllers, contentList, pageControl;
+@synthesize navigationItem, scrollView, viewControllers, contentList, pageControl, createView, toolBar;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -31,25 +33,64 @@ static NSUInteger kNumberOfPages = 6;
 - (void)viewDidLoad {
     
     self.navigationItem.title = @"Anslagstavlan";
-    
+        
     UIBarButtonItem *lButton =[[UIBarButtonItem alloc] init];
     
     lButton.title= @"Stäng";
     [lButton setTarget:self];
     [lButton setAction:@selector(closeView:)]; //aMethod defined in the class
-    self.navigationItem.leftBarButtonItem =lButton;
+    self.navigationItem.rightBarButtonItem =lButton;
     [lButton release];
     
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc]
-                                  initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                                  target:self
-                                  action:@selector(addNote:)];
+    UIBarButtonItem *modeButton = [[UIBarButtonItem alloc] init];
+    modeButton.title= @"Lista";
+    [modeButton setTarget:self];
+    [modeButton setAction:@selector(addNote:)];
+                                  //initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                  //target:self
+                                  //action:@selector(addNote:)];
     
-    addButton.style = UIBarButtonItemStyleBordered;
-    self.navigationItem.rightBarButtonItem = addButton;
-    [addButton release];
+    modeButton.style = UIBarButtonItemStyleBordered;
+    self.navigationItem.leftBarButtonItem = modeButton;
+    [modeButton release];
     
+    UIBarButtonItem *systemItem1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                                 target:self
+                                                                                 action:@selector(pressButton1:)];
+    
+    UIBarButtonItem *systemItem2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                                 target:self
+                                                                                 action:@selector(pressButton2:)];
+    
+    
+    //Use this to put space in between your toolbox buttons
+    UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                              target:nil
+                                                                              action:nil];
+    
+    //Add buttons to the array
+    NSArray *items = [NSArray arrayWithObjects: flexItem, systemItem1,flexItem,systemItem2,flexItem, nil];
+    
+    //release buttons
+    [systemItem1 release];
+    [systemItem2 release];
+    [flexItem release];
+    
+    //add array of buttons to toolbar
+    [toolBar setItems:items animated:NO];
+    
+    umuAppAppDelegate *appDelegate = (umuAppAppDelegate *)[[UIApplication sharedApplication] delegate];
+        
     //ScrollView Load
+    
+    NSMutableArray *controllers = [[NSMutableArray alloc] init];
+    for (unsigned i = 0; i < kNumberOfPages; i++)
+    {
+		[controllers addObject:[NSNull null]];
+    }
+    self.viewControllers = controllers;
+    [controllers release];
+
     // a page is the width of the scroll view
     scrollView.pagingEnabled = YES;
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * kNumberOfPages, scrollView.frame.size.height);
@@ -73,6 +114,7 @@ static NSUInteger kNumberOfPages = 6;
 }
 
 - (void)closeView:(id)sender {
+    /**
     self.view.alpha = 1.0;
     [[self view] setFrame:CGRectMake(0,0,320,480)];
     [UIView beginAnimations:nil context:nil];
@@ -81,7 +123,14 @@ static NSUInteger kNumberOfPages = 6;
     [[self view] setFrame:CGRectMake(160,240,0,0)];
     self.view.alpha = 0.0;
     [UIView commitAnimations];
-    //[self.view removeFromSuperview];
+     **/
+     [self.view removeFromSuperview];
+
+}
+
+- (void)addNote {
+    createView = [[CreateNoteViewController alloc] initWithNibName:@"CreateNoteViewController" bundle:nil];
+    [self presentModalViewController:self.createView animated:YES];
 
 }
 
@@ -96,7 +145,7 @@ static NSUInteger kNumberOfPages = 6;
     NoteView *controller = [viewControllers objectAtIndex:page];
     if ((NSNull *)controller == [NSNull null])
     {
-        controller = [[NoteView alloc] init];
+        controller = [[NoteView alloc] initWithNibName:@"NoteView" bundle:nil];
         [viewControllers replaceObjectAtIndex:page withObject:controller];
         [controller release];
     }
@@ -170,6 +219,15 @@ static NSUInteger kNumberOfPages = 6;
     pageControlUsed = YES;
 }
 
+//Action methods for toolbar buttons:
+- (void) pressButton1:(id)sender{
+    //label.text = @"Add";
+    [self addNote];
+}
+- (void) pressButton2:(id)sender{
+   // label.text = @"Take Action";
+}
+
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -189,7 +247,7 @@ static NSUInteger kNumberOfPages = 6;
     [pageControl release];
     [viewControllers release];
     [scrollView release];
-    
+    [toolBar release];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -197,6 +255,7 @@ static NSUInteger kNumberOfPages = 6;
 
 
 - (void)dealloc {
+    [toolBar release];
     [super dealloc];
 }
 

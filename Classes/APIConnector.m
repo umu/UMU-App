@@ -19,7 +19,7 @@
 	self.categoriesUrl = NSLocalizedString(@"apicategories", @"API-urlen för kategorier"); 
 	self.eventsUrl = NSLocalizedString(@"apievents", @"API-urlen för events"); 
 	self.placesUrl = NSLocalizedString(@"apiplaces", @"API-urlen för platser"); 
-	self.notesUrl = NSLocalizedString(@"apiobjects", @"API-urlen för anslag"); 
+	self.notesUrl = NSLocalizedString(@"apinotes", @"API-urlen för anslag"); 
 	return self;
 }
 

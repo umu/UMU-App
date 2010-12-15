@@ -45,4 +45,7 @@
 -(id) getPlaceWithId: (int) placeId;
 -(id) getPlacesFromCategories: (NSString *) ids;
 
+-(id) getArrayFromUrl: (NSString *) url;
+
+
 @end

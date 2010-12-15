@@ -19,6 +19,10 @@
 		7C41210E1293E2970051DAFC /* NoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C41210C1293E2970051DAFC /* NoteViewController.xib */; };
 		7C778EEA1294185A005AF8A9 /* notes_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C778EE81294185A005AF8A9 /* notes_background.png */; };
 		7C778EEB1294185A005AF8A9 /* notes_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C778EE91294185A005AF8A9 /* notes_background@2x.png */; };
+		7C86350F129D4DC000010833 /* anslagstavla.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C86350D129D4DC000010833 /* anslagstavla.png */; };
+		7C863510129D4DC000010833 /* anslagstavla@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C86350E129D4DC000010833 /* anslagstavla@2x.png */; };
+		7C86351B129D57F200010833 /* star_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C863519129D57F200010833 /* star_unselected.png */; };
+		7C86351C129D57F200010833 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C86351A129D57F200010833 /* star.png */; };
 		7C9B5164127855190082DB44 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B514C127855190082DB44 /* CDataScanner.m */; };
 		7C9B5165127855190082DB44 /* CExtensibleJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B514F127855190082DB44 /* CExtensibleJSONSerializer.m */; };
 		7C9B5166127855190082DB44 /* CJSONDeserializer_BlocksExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9B5151127855190082DB44 /* CJSONDeserializer_BlocksExtensions.m */; };
@@ -89,6 +93,10 @@
 		7C41210C1293E2970051DAFC /* NoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteViewController.xib; path = Classes/Notes/NoteViewController.xib; sourceTree = "<group>"; };
 		7C778EE81294185A005AF8A9 /* notes_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notes_background.png; path = Resources/notes_background.png; sourceTree = "<group>"; };
 		7C778EE91294185A005AF8A9 /* notes_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "notes_background@2x.png"; path = "Resources/notes_background@2x.png"; sourceTree = "<group>"; };
+		7C86350D129D4DC000010833 /* anslagstavla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = anslagstavla.png; path = Resources/anslagstavla.png; sourceTree = "<group>"; };
+		7C86350E129D4DC000010833 /* anslagstavla@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "anslagstavla@2x.png"; path = "Resources/anslagstavla@2x.png"; sourceTree = "<group>"; };
+		7C863519129D57F200010833 /* star_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_unselected.png; path = Resources/star_unselected.png; sourceTree = "<group>"; };
+		7C86351A129D57F200010833 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Resources/star.png; sourceTree = "<group>"; };
 		7C9B514B127855190082DB44 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
 		7C9B514C127855190082DB44 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
 		7C9B514E127855190082DB44 /* CExtensibleJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CExtensibleJSONSerializer.h; sourceTree = "<group>"; };
@@ -228,6 +236,7 @@
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -266,6 +275,10 @@
 		7C778EE612941814005AF8A9 /* GFX */ = {
 			isa = PBXGroup;
 			children = (
+				7C863519129D57F200010833 /* star_unselected.png */,
+				7C86351A129D57F200010833 /* star.png */,
+				7C86350D129D4DC000010833 /* anslagstavla.png */,
+				7C86350E129D4DC000010833 /* anslagstavla@2x.png */,
 				7C778EE81294185A005AF8A9 /* notes_background.png */,
 				7C778EE91294185A005AF8A9 /* notes_background@2x.png */,
 				FBE4ABD912785D3F004021F8 /* Localizable.strings */,
@@ -296,7 +309,6 @@
 				2899E5210DE3E06400AC0155 /* umuAppViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* umuApp-Info.plist */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
 			);
 			name = "Interface XIB";
 			sourceTree = "<group>";
@@ -531,6 +543,10 @@
 				7C778EEB1294185A005AF8A9 /* notes_background@2x.png in Resources */,
 				7CE0205B129D1ECC00422DA3 /* NoteView.xib in Resources */,
 				FBE4ABDA12785D3F004021F8 /* Localizable.strings in Resources */,
+				7C86350F129D4DC000010833 /* anslagstavla.png in Resources */,
+				7C863510129D4DC000010833 /* anslagstavla@2x.png in Resources */,
+				7C86351B129D57F200010833 /* star_unselected.png in Resources */,
+				7C86351C129D57F200010833 /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

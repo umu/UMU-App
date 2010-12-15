@@ -59,6 +59,7 @@
     }
  
     [self.view addSubview:viewController.view]; 
+    /**
     viewController.view.alpha = 0.0;
     [[viewController view] setFrame:CGRectMake(160,240,0,0)];
     [UIView beginAnimations:nil context:nil];
@@ -67,6 +68,7 @@
     [[viewController view] setFrame:CGRectMake(0,0,320,480)];
     viewController.view.alpha = 1.0;
     [UIView commitAnimations];
+     **/
 
         
      
