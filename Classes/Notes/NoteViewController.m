@@ -16,7 +16,7 @@ static NSUInteger kNumberOfPages = 6;
 
 @implementation NoteViewController
 
-@synthesize navigationItem, scrollView, viewControllers, contentList, pageControl, createView, toolBar;
+@synthesize navigationItem, scrollView, viewControllers, contentList, pageControl, createView, toolBar, listView;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -45,7 +45,7 @@ static NSUInteger kNumberOfPages = 6;
     UIBarButtonItem *modeButton = [[UIBarButtonItem alloc] init];
     modeButton.title= @"Lista";
     [modeButton setTarget:self];
-    [modeButton setAction:@selector(addNote:)];
+    [modeButton setAction:@selector(showList:)];
                                   //initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                   //target:self
                                   //action:@selector(addNote:)];
@@ -109,6 +109,8 @@ static NSUInteger kNumberOfPages = 6;
     [self loadScrollViewWithPage:0];
     [self loadScrollViewWithPage:1];
     
+    listView = [[NoteListViewController alloc] initWithNibName:@"NoteListViewController" bundle:nil];
+    
     
     [super viewDidLoad];
 }
@@ -126,6 +128,50 @@ static NSUInteger kNumberOfPages = 6;
      **/
      [self.view removeFromSuperview];
 
+}
+
+- (void)showNote:(id)sender
+{
+    NSLog(@"Notevy");
+
+    UIView *list = self.listView.view;
+
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationBeginsFromCurrentState:NO];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.scrollView cache:YES];
+    
+    //UIView *parent = self.scrollView.superview;
+    
+    [UIView commitAnimations];
+    [list removeFromSuperview];
+    [self.navigationItem.leftBarButtonItem setAction:@selector(showList:)];
+    self.navigationItem.leftBarButtonItem.title = @"Lista";
+    
+}
+
+
+
+- (void)showList:(id)sender
+{
+
+    
+    UIView *list = self.listView.view;
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationBeginsFromCurrentState:NO];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.scrollView cache:YES];
+    
+    //UIView *parent = self.scrollView.superview;
+    
+    [UIView commitAnimations];
+    [scrollView addSubview:list];
+    [self.navigationItem.leftBarButtonItem setAction:@selector(showNote:)];
+    self.navigationItem.leftBarButtonItem.title = @"Anslag";
+
+     
+    
 }
 
 - (void)addNote {
@@ -248,6 +294,7 @@ static NSUInteger kNumberOfPages = 6;
     [viewControllers release];
     [scrollView release];
     [toolBar release];
+    [listView release];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
