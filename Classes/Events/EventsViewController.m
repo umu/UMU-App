@@ -5,19 +5,27 @@
 //  Created by Erik Ortman on 10/20/10.
 //  Copyright (c) 2010 __MyCompanyName__. All rights reserved.
 //
-
+#import <UIKit/UIKit.h>
 #import "EventsViewController.h"
 
 
 @implementation EventsViewController
-//@synthesize listOfItems;
+@synthesize listOfItems, myTable;
 
 #pragma mark -
 #pragma mark View lifecycle
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	/**
+	
+	UIBarButtonItem *lButton =[[UIBarButtonItem alloc] init];
+    
+    lButton.title= @"Stäng";
+    [lButton setTarget:self];
+    [lButton setAction:@selector(closeView:)]; //aMethod defined in the class
+    self.navigationItem.rightBarButtonItem =lButton;
+    [lButton release];
+	
 	//Initialize the array.
 	listOfItems = [[NSMutableArray alloc] init];
 	//Add items
@@ -28,9 +36,10 @@
 	[listOfItems addObject:@"Fredag"];
 	[listOfItems addObject:@"Lördag"];
 	[listOfItems addObject:@"Söndag"];
-	**/
+
 	//Set the title
 	self.navigationItem.title = @"Veckan";
+ 
 }
 #pragma mark -
 #pragma mark Table view data source
@@ -41,7 +50,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	//return [listOfItems count]; // Antal item i sectionen
+	return [listOfItems count]; // Antal item i sectionen
 	
 }
 
@@ -56,14 +65,12 @@
 	}
 	
 	// Set up the cell...
-	//NSString *cellValue = [listOfItems objectAtIndex:indexPath.row];
-	//cell.text = cellValue;
-	NSLog(@"test");
-	cell.textLabel.text = @"test";
+	NSString *cellValue = [listOfItems objectAtIndex:indexPath.row];
+	cell.text = cellValue;
+	//cell.textLabel.text = @"test";
 	
 	return cell;
 }
-
 
 
 #pragma mark -
@@ -82,12 +89,19 @@
 }
 
 - (void)viewDidUnload {
+	NSLog(@"Did not load");
+
+}
+
+- (void)closeView:(id)sender {
+
+	[self.view removeFromSuperview];
+	
 }
 
 
 - (void)dealloc {
-	//[listOfItems release];
-	
+	[listOfItems release];
     [super dealloc];
 }
 

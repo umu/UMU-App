@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 
 
-@interface EventsViewController : UITableViewController {
-    
+@interface EventsViewController : UIViewController {
+    NSMutableArray *listOfItems;
+	IBOutlet UITableView *myTable;
+
 }
+@property (nonatomic, retain) NSMutableArray *listOfItems;
+@property (nonatomic, retain) UITableView *myTable;
 
 @end
+
+
