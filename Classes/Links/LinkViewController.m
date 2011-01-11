@@ -10,22 +10,43 @@
 
 
 @implementation LinkViewController
+@synthesize listOfItems, linkTable;
 
 
 #pragma mark -
 #pragma mark View lifecycle
 
-/*
+//viewDidLoad method declared in RootViewController.m
 - (void)viewDidLoad {
-    [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	[super viewDidLoad];
+	
+	UIBarButtonItem *lButton =[[UIBarButtonItem alloc] init];
+    
+    lButton.title = @"Stäng";
+    [lButton setTarget:self];
+    [lButton setAction:@selector(closeView:)]; //aMethod defined in the class
+    self.navigationItem.leftBarButtonItem = lButton;
+    [lButton release];
+	
+	
+	//Initialize the array.
+	listOfItems = [[NSMutableArray alloc] init];
+	
+	//Add items
+	[listOfItems addObject:@"Studera.nu"];
+	[listOfItems addObject:@"Studentkortet.se"];
+	[listOfItems addObject:@"lokalbokning.se"];
+	[listOfItems addObject:@"csn.se"];
+	[listOfItems addObject:@"utbytesstudent.se"];
+	[listOfItems addObject:@"vertex.se"];
+	[listOfItems addObject:@"ingenjören.se"];
+	[listOfItems addObject:@"lunch.nu"];
+	
+	//Set the title
+	self.navigationItem.title = @"Countries";
 }
-*/
+
+
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
@@ -61,13 +82,13 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    //return <#number of sections#>;
+     return 1;
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    //return <#number of rows in section#>;
+    return [listOfItems count];
 }
 
 
@@ -81,9 +102,21 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    // Configure the cell...
+    NSString *cellValue = [listOfItems objectAtIndex:indexPath.row];
+	cell.text = cellValue;
     
     return cell;
+}
+
+- (void)closeView:(id)sender {
+    self.view.alpha = 1.0;
+    [[self view] setFrame:CGRectMake(0,0,320,480)];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.2]; 
+    //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:[self view] cache:YES];
+    [[self view] setFrame:CGRectMake(160,240,0,0)];
+    self.view.alpha = 0.0;
+    [UIView commitAnimations];
 }
 
 
@@ -159,7 +192,11 @@
 
 
 - (void)dealloc {
-    [super dealloc];
+   
+	[listOfItems release];
+	//[linkTable release];
+	 [super dealloc];
+	
 }
 
 

@@ -10,6 +10,7 @@
 #import "NoteViewController.h"
 #import "NewsViewController.h"
 #import "PlaceMapController.h"
+#import "LinkViewController.h"
 
 @implementation umuAppViewController
 
@@ -52,6 +53,7 @@
             viewController = [[NoteViewController alloc] initWithNibName:@"NoteViewController" bundle:nil];
             break;
         case 3:
+			 viewController = [[LinkViewController alloc] initWithNibName:@"LinkViewController" bundle:nil];
             break;
         case 4:
             viewController = [[NewsViewController alloc] initWithNibName:@"NewsViewController" bundle:nil];
