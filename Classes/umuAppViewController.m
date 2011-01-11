@@ -11,6 +11,8 @@
 #import "NewsViewController.h"
 #import "PlaceMapController.h"
 #import "LinkViewController.h"
+#import "EventsViewController.h"
+
 
 @implementation umuAppViewController
 
@@ -45,6 +47,7 @@
     UIButton *button = (UIButton *)sender;
     switch ([button tag]) {
         case 0:
+			viewController = [[EventsViewController alloc] initWithNibName:@"EventsViewController" bundle:nil];
             break;
         case 1:
             viewController = [[PlaceMapController alloc] initWithNibName:@"PlaceMapController" bundle:nil];
@@ -60,6 +63,8 @@
             break;
         case 5:
             break;
+
+
     }
  
     [self.view addSubview:viewController.view]; 

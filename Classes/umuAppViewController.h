@@ -14,7 +14,6 @@
     UIViewController *viewController;
     UINavigationController *navigationController;
 
-
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *featureButton;

@@ -23,7 +23,7 @@
 
     // Create API-connector
 	[self setApiConnector:[[APIConnector alloc] init]];
-	notesArray = [self.apiConnector getNotes];
+	//notesArray = [self.apiConnector getNotes];
     // Override point for customization after application launch.
 
     // Add the view controller's view to the window and display.

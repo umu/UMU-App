@@ -72,6 +72,8 @@
 		7CDA11BC126F214300C97603 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA11BB126F214300C97603 /* Icon.png */; };
 		7CE0205A129D1ECC00422DA3 /* NoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE02058129D1ECC00422DA3 /* NoteView.m */; };
 		7CE0205B129D1ECC00422DA3 /* NoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE02059129D1ECC00422DA3 /* NoteView.xib */; };
+		7CF48A9E12B921C400283DFF /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF48A9D12B921C400283DFF /* NoteListViewController.m */; };
+		7CF48AA012B921CE00283DFF /* NoteListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF48A9F12B921CE00283DFF /* NoteListViewController.xib */; };
 		FB0FCC3512B774A5004DE40F /* main_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC3312B774A5004DE40F /* main_bg.jpg */; };
 		FB0FCC3612B774A5004DE40F /* main_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC3412B774A5004DE40F /* main_bg@2x.jpg */; };
 		FB0FCC3E12B77F70004DE40F /* anslag_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0FCC3A12B77F70004DE40F /* anslag_icon.png */; };
@@ -196,6 +198,9 @@
 		7CE02057129D1ECC00422DA3 /* NoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteView.h; path = Notes/NoteView.h; sourceTree = "<group>"; };
 		7CE02058129D1ECC00422DA3 /* NoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteView.m; path = Notes/NoteView.m; sourceTree = "<group>"; };
 		7CE02059129D1ECC00422DA3 /* NoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteView.xib; path = Classes/Notes/NoteView.xib; sourceTree = "<group>"; };
+		7CF48A9C12B921C400283DFF /* NoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteListViewController.h; path = Notes/NoteListViewController.h; sourceTree = "<group>"; };
+		7CF48A9D12B921C400283DFF /* NoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteListViewController.m; path = Notes/NoteListViewController.m; sourceTree = "<group>"; };
+		7CF48A9F12B921CE00283DFF /* NoteListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteListViewController.xib; path = Classes/Notes/NoteListViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* umuApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "umuApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		FB0FCC3312B774A5004DE40F /* main_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = main_bg.jpg; path = Resources/main_bg.jpg; sourceTree = "<group>"; };
 		FB0FCC3412B774A5004DE40F /* main_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "main_bg@2x.jpg"; path = "Resources/main_bg@2x.jpg"; sourceTree = "<group>"; };
@@ -344,6 +349,7 @@
 		7C778EE712941825005AF8A9 /* Interface XIB */ = {
 			isa = PBXGroup;
 			children = (
+				7CF48A9F12B921CE00283DFF /* NoteListViewController.xib */,
 				7CE02059129D1ECC00422DA3 /* NoteView.xib */,
 				7C41210C1293E2970051DAFC /* NoteViewController.xib */,
 				7CDA11B8126F0E8D00C97603 /* TwitterViewController.xib */,
@@ -471,6 +477,8 @@
 		7CDA114B126EF4A000C97603 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				7CF48A9C12B921C400283DFF /* NoteListViewController.h */,
+				7CF48A9D12B921C400283DFF /* NoteListViewController.m */,
 				7CE02057129D1ECC00422DA3 /* NoteView.h */,
 				7CE02058129D1ECC00422DA3 /* NoteView.m */,
 				7C41210A1293E2970051DAFC /* NoteViewController.h */,
@@ -617,6 +625,7 @@
 				FB0FCC5112B79BB5004DE40F /* lankar@2x.png in Resources */,
 				FB0FCC5212B79BB5004DE40F /* nyheter.png in Resources */,
 				FB0FCC5312B79BB5004DE40F /* nyheter@2x.png in Resources */,
+				7CF48AA012B921CE00283DFF /* NoteListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +674,7 @@
 				7C41210D1293E2970051DAFC /* NoteViewController.m in Sources */,
 				7CE0205A129D1ECC00422DA3 /* NoteView.m in Sources */,
 				FB10D0BA12A68D360091C285 /* UMUAnnotation.m in Sources */,
+				7CF48A9E12B921C400283DFF /* NoteListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
