@@ -20,16 +20,17 @@
 	
 	UIBarButtonItem *lButton =[[UIBarButtonItem alloc] init];
     
-    lButton.title= @"Stäng";
+    lButton.title = @"Stäng";
     [lButton setTarget:self];
     [lButton setAction:@selector(closeView:)]; //aMethod defined in the class
-    self.navigationItem.rightBarButtonItem =lButton;
+    self.navigationItem.leftBarButtonItem = lButton;
     [lButton release];
+	
 	
 	//Initialize the array.
 	listOfItems = [[NSMutableArray alloc] init];
 	//Add items
-	[listOfItems addObject:@"Månday"];
+	[listOfItems addObject:@"Måndag"];
 	[listOfItems addObject:@"Tisdag"];
 	[listOfItems addObject:@"Onsdag"];
 	[listOfItems addObject:@"Torsdag"];

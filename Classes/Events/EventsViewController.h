@@ -12,10 +12,13 @@
 @interface EventsViewController : UIViewController {
     NSMutableArray *listOfItems;
 	IBOutlet UITableView *myTable;
+	UINavigationItem *navigationItem;
+
 
 }
 @property (nonatomic, retain) NSMutableArray *listOfItems;
 @property (nonatomic, retain) UITableView *myTable;
+@property (nonatomic, retain) IBOutlet UINavigationItem *navigationItem;
 
 @end
 
